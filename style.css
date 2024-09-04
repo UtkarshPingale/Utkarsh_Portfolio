@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    overflow: hidden;
+    background: rgba(255, 81, 0, 0.6); 
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 30px;
+    width: 100px;
+    height: 100%;
+    te
+}
+
+.nav-list {
+    display: inline;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #ffd700;
+    /* Change the color on hover */
+}
