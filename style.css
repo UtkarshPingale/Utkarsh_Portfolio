@@ -18,18 +18,19 @@ html,body {
     background-size: cover;
     color: white;
     padding: 10px 30px;
-    width: 100px;
+    width: 200px;
     height: 100%;
-    te
 }
 
 .nav-list {
+    text-align: center;
     display: inline;
     list-style: none;
+    line-height: 70px;
 }
 
 .nav-list li {
-    margin-right: 20px;
+    margin-top: ;
 }
 
 .nav-list li:last-child {
