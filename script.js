@@ -4,3 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector(".sidebar").classList.toggle("active");
     });
 });
+
+var typed = new Typed(".auto_type", {
+    strings : ["Engineer", "Data Scientist", 'Developer', "Coder"],
+    typeSpeed : 300,
+    backSpeed : 150,
+    loop : true,
+})
