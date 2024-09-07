@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 var typed = new Typed(".auto_type", {
-    strings : ["Engineer", "Data Scientist", 'Developer', "Coder"],
+    strings : ["Engineer", "Data Scientist", 'Developer', "Coder", "Designer"],
     typeSpeed : 300,
     backSpeed : 150,
     loop : true,
