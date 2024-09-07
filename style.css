@@ -1,105 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-html,body {
-    font-family: 'Arial', sans-serif;
-    height: 100%;
+body {
+  background-color: #5b6677;
 }
 
-.navbar {
-    position: fixed;
-    /* align-items: center; */
-    /* justify-content: space-between; */
-    overflow: hidden;
-    background: rgba(255, 81, 0, 0.6); 
-    background-blend-mode: darken;
-    background-size: cover;
-    color: white;
-    padding: 10px 30px;
-    width: 200px;
-    height: 100%;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
+.container {
+  width: 100%;
+  min-height: 100vh;
 }
 
-/* Show navbar when checked */
-#menuToggle:checked ~ .menu-container {
-    transform: translateX(0);
+.sidebar {
+  position: relative;
+  width: 256px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 30px;
+  transition: all 0.3s;
 }
 
-.menu-container {
-    transition: transform 0.3s ease;
-    transform: translateX(-100%);
+.sidebar .head {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f6f6f6;
 }
 
-.nav-list {
-    text-align: center;
-    display: inline;
-    list-style: none;
-    line-height: 70px;
+.user-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.nav-list li {
-    margin-top: 0px;
+.user-img img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.nav-list li:last-child {
-    margin-right: 0;
+.user-details .title,
+.menu .title {
+  font-size: 10px;
+  font-weight: 500;
+  color: #757575;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.nav-list li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
+.user-details .name {
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.nav-list li a:hover {
-    color: #ffd700;
-    /* Change the color on hover */
+.menu ul li {
+  list-style: none;
+  margin-bottom: 5px;
 }
 
-/* From Uiverse.io by JulanDeAlb */ 
-.hamburger {
-    cursor: pointer;
-  }
-  
-  .hamburger input {
-    display: none;
-  }
-  
-  .hamburger svg {
-    /* The size of the SVG defines the overall size */
-    height: 3em;
-    /* Define the transition for transforming the SVG */
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line {
-    fill: none;
-    stroke: white;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 3;
-    /* Define the transition for transforming the Stroke */
-    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .line-top-bottom {
-    stroke-dasharray: 12 63;
-  }
-  
-  .hamburger input:checked + svg {
-    transform: rotate(-45deg);
-  }
-  
-  .hamburger input:checked + svg .line-top-bottom {
-    stroke-dasharray: 20 300;
-    stroke-dashoffset: -32.42;
-  }
-  
+.menu ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575;
+  text-decoration: none;
+  padding: 12px 8px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.menu ul li:hover a,
+.menu ul li:active a {
+  color: #000;
+  background-color: #f6f6f6;
+}
+
+.menu-btn {
+  position: absolute;
+  right: -14px;
+  top: 3.5%;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #757575;
+  border: 2px solid #f6f6f6;
+  background-color: #fff;
+}
+
+.menu-btn:hover i {
+  color: #000;
+}
+
+.menu-btn i {
+  transition: all 0.3s;
+}
+
+.sidebar.active {
+  width: 92px;
+  background-color: #ececec;
+}
+
+.sidebar.active .menu-btn i {
+  transform: rotate(180deg);
+}
+
+.sidebar.active .user-details {
+  display: none;
+}
+
+.sidebar.active .menu .title{
+  text-align: center;
+}
+
+.sidebar.active .menu ul li .arrow {
+  display: none;
+}
+
+.sidebar.active span{
+  display: none;
+}

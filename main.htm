@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar">
-        <label class="hamburger">
-            <input type="checkbox">
-            <svg viewBox="0 0 32 32">
-              <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-              <path class="line" d="M7 16 27 16"></path>
-            </svg>
-          </label>
-        <div class="menu-container">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Technical Skills</a></li>
-                <li><a href="#contact">Achievements</a></li>
-                <li><a href="#contact">Projects</a></li>
-                <li><a href="#contact">Social Media</a></li>
-            </ul>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu-btn">
+                <i class="ph-bold ph-caret-left"></i>
+            </div>
+            <div class="head">
+                <div class="user-img">
+                    <img src="image/Passport Size Photo.jpeg" alt="">
+                </div>
+                <div class="user-details">
+                    <p class="title">Data Scientist</p>
+                    <p class="name">Utkarsh Pingale</p>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="menu">
+                    <p class="title">Menu</p>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class="icon ph-bold ph-house-simple"></i>
+                                <span class="text">Dashboard</span>
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon ph-bold ph-user"></i>
+                                <span class="text">User</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USALKG6008uWWBhdYsM3hmdirnOEWp8h2B1a0ikj5zBz1Xs8QOrvY90xEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".menu-btn").addEventListener("click", function() {
+                console.log("Menu button clicked!");
+                document.querySelector(".sidebar").classList.toggle("active");
+            });
+        });
+    </script> -->
+    
 </body>
 </html>
