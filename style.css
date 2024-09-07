@@ -49,7 +49,7 @@ body {
 }
 
 .user-details .title,
-.menu .title {
+.menu .title{
   font-size: 10px;
   font-weight: 500;
   color: #757575;
@@ -62,12 +62,12 @@ body {
   font-weight: 500;
 }
 
-.menu ul li {
+.menu ul li{
   list-style: none;
   margin-bottom: 5px;
 }
 
-.menu ul li a {
+.menu ul li a{
   display: flex;
   align-items: center;
   gap: 10px;
@@ -81,7 +81,7 @@ body {
 }
 
 .menu ul li:hover a,
-.menu ul li:active a {
+.menu ul li:active a{
   color: #000;
   background-color: #f6f6f6;
 }
@@ -133,4 +133,13 @@ body {
 
 .sidebar.active span{
   display: none;
+}
+
+.active {
+  align-items: center;
+}
+
+.gap-div {
+  margin: 10px;
+  border-bottom: 1px solid #f6f6f6;
 }
